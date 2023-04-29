@@ -28,16 +28,17 @@ public class TvRemoteControl {
         int ses = 3;
         ArrayList<String> kanallar = new ArrayList<>(Arrays.asList("TRT","ATV","AHABER","TV8","FOX","SHOW"));
         int kanal = 1;
+        System.out.println("*********Kumanda Menüsü********\n"+
+                "Sesi Arttırma ve Azaltma --> 1\n" +
+                "Kanal Değiştirmek İçin --> 2\n" +
+                "Kanala Gitmek İçin     --> 3\n" +
+                "Kanal Listesi İçin     --> 4\n" +
+                "Kanal Eklemek İçin     --> 5\n" +
+                "Kanal Uydu Bilgileri   --> 6\n" +
+                "Çıkmak İçin            --> q\n" +
+                "*******************************");
         while(true){
-            System.out.println("*********Kumanda Menüsü********\n"+
-                    "Sesi Arttırma ve Azaltma --> 1\n" +
-                    "Kanal Değiştirmek İçin --> 2\n" +
-                    "Kanala Gitmek İçin     --> 3\n" +
-                    "Kanal Listesi İçin     --> 4\n" +
-                    "Kanal Eklemek İçin     --> 5\n" +
-                    "Kanal Uydu Bilgileri   --> 6\n" +
-                    "Çıkmak İçin            --> q\n" +
-                    "*******************************");
+
             System.out.print("Seçiminizi Giriniz : ");
             String secenek = input.next();
             if(secenek.equals("1")){
@@ -78,7 +79,7 @@ public class TvRemoteControl {
             } else if (secenek.equals("6")) {
                 System.out.println("kanal uydu bilgisi");
             } else if (secenek.equals("q")) {
-                System.out.println("Çıkış yapılıyor");
+                System.out.println("Çıkış yapıldı");
                 break;
             }else{
                 System.out.println("Yanlış Giriş Yaptınız");

@@ -88,4 +88,4 @@ public class TvRemoteControl {
 }
 ///deneme yapiyorum stop
 //muhammet değişiklik
-// fatıh degısıklık
+// fatih degisiklik

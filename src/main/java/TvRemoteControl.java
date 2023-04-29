@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -86,3 +85,8 @@ public class TvRemoteControl {
         }
     }
 }
+///deneme yapiyorum stop
+//muhammet değişiklik
+// Ali Degisiklik
+//sinem değişiklik
+//beyza değişiklik

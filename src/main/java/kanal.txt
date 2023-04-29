@@ -1,0 +1,48 @@
+Kanal adı: TRT1
+Uydu: Türksat 4A
+Frekans: 11958
+Polarizasyon: Dikey (Vertical)
+Symbol: 27500 Ksym/s
+Fec: 5/6
+
+Kanal adı: TRT Spor
+Uydu: Türksat 3A
+Frekans: 11054
+Polarizasyon: Dikey (Vertical)
+Symbol: 30000 Ksym/s
+Fec: 3/4
+
+Kanal adı: ATV
+Uydu: Türksat 4A
+Frekans: 12053
+Polarizasyon: Yatay (Horizantal)
+Symbol: 27500 Ksym/s
+Fec: 5/6
+
+Kanal adı: Kanal D
+Uydu: Türksat 4A
+Frekans: 11977
+Polarizasyon: Yatay (Horizantal)
+Symbol: 27500 Ksym/s
+Fec: 5/6
+
+Kanal adı: FOX TV
+Uydu: Türksat 4A
+Frekans: 12329
+Polarizasyon: Yatay (Horizantal)
+Symbol: 66666 Ksym/s
+Fec: 2/3
+
+Kanal adı: STAR TV
+Uydu: Türksat 4A
+Frekans: 12015
+Polarizasyon: Yatay (Horizantal)
+Symbol: 27500 Ksym/s
+Fec: 5/6
+
+Kanal adı: TV8
+Uydu: Türksat 4A
+Frekans: 12346 MHz
+Polarizasyon: Yatay (Horizontal)
+Symbol Rate: 9600 Ksym/s
+Fec: 3/4

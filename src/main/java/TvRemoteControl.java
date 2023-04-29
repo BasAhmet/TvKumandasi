@@ -85,8 +85,14 @@ public class TvRemoteControl {
         }
     }
 }
+
+//muhammet branch oluşturdum değişiklikler kendi branchımda yapıldı .
 ///deneme yapiyorum stop
 //muhammet değişiklik
+
+// fatih degisiklik
+
 // Ali Degisiklik
 //sinem değişiklik
 //beyza değişiklik
+// fatih degisiklik

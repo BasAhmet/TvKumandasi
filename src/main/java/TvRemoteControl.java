@@ -1,4 +1,3 @@
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -25,42 +24,22 @@ ArrayList<ArrayList<String>> array_list = new ArrayList<ArrayList<String>>();
 public class TvRemoteControl {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int ses = 3;
+
         ArrayList<String> kanallar = new ArrayList<>(Arrays.asList("TRT","ATV","AHABER","TV8","FOX","SHOW"));
         String kanalBilgileri[][] = {{"TRT1","Türksat 4A","11958","V","27500","5/6"},
                 {"ATV","Türksat 4A","12053","H","27500","5/6"}};
 
         int kanal = 1;
-        System.out.println("*********Kumanda Menüsü********\n"+
-                "Sesi Arttırma ve Azaltma --> 1\n" +
-                "Kanal Değiştirmek İçin --> 2\n" +
-                "Kanala Gitmek İçin     --> 3\n" +
-                "Kanal Listesi İçin     --> 4\n" +
-                "Kanal Eklemek İçin     --> 5\n" +
-                "Kanal Uydu Bilgileri   --> 6\n" +
-                "Çıkmak İçin            --> q\n" +
-                "*******************************");
+
+        KanalMenusu.kanalMenusu();
+
         while(true){
 
             System.out.print("Seçiminizi Giriniz : ");
             String secenek = input.next();
             if(secenek.equals("1")){
-                System.out.println("Ses arttırmak için --> (+)\n" +
-                        "Ses azaltmak için --> (-)\n" +
-                        "Ses kapatmak için --> 0\n");
-                String sesDurumu = input.next();
-                if (sesDurumu.equals("+")){
-                    ses ++;
-                    System.out.println("Ses seviyesi : " + ses);
-                } else if (sesDurumu.equals("-")) {
-                    ses --;
-                    System.out.println("Ses seviyesi : " + ses);
-                } else if (sesDurumu.equals("0")) {
-                    ses = 0;
-                    System.out.println("TV sessize alındı.");
-                }else {
-                    System.out.println("Yanlış giriş.");
-                }
+
+                SesDurumu.sesDurumu();
 
             } else if (secenek.equals("2")) {
                 System.out.println("Mevcut kanal : " + kanallar.get(kanal-1));

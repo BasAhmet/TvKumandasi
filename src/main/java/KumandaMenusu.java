@@ -1,5 +1,5 @@
-public class KanalMenusu {
-    public static void kanalMenusu(){
+public class KumandaMenusu {
+    public static void kumandaMenusu(){
         System.out.println("*********Kumanda Menüsü********\n"+
                 "Sesi Arttırma ve Azaltma --> 1\n" +
                 "Kanal Değiştirmek İçin --> 2\n" +

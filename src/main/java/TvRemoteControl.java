@@ -30,7 +30,7 @@ public class TvRemoteControl {
         String kanalBilgileri[][] = {{"TRT1","Türksat 4A","11958","V","27500","5/6"},
                 {"ATV","Türksat 4A","12053","H","27500","5/6"}};
 
-        KanalMenusu.kanalMenusu(); // Kumanda Menüsü
+        KumandaMenusu.kumandaMenusu(); // Kumanda Menüsü
 
         while(true){
 

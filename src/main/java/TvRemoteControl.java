@@ -23,15 +23,14 @@ ArrayList<ArrayList<String>> array_list = new ArrayList<ArrayList<String>>();
  */
 public class TvRemoteControl {
     public static void main(String[] args) {
+        int kanal = 1;
         Scanner input = new Scanner(System.in);
 
         ArrayList<String> kanallar = new ArrayList<>(Arrays.asList("TRT","ATV","AHABER","TV8","FOX","SHOW"));
         String kanalBilgileri[][] = {{"TRT1","Türksat 4A","11958","V","27500","5/6"},
                 {"ATV","Türksat 4A","12053","H","27500","5/6"}};
 
-        int kanal = 1;
-
-        KanalMenusu.kanalMenusu();
+        KanalMenusu.kanalMenusu(); // Kumanda Menüsü
 
         while(true){
 
@@ -42,26 +41,13 @@ public class TvRemoteControl {
                 SesDurumu.sesDurumu();
 
             } else if (secenek.equals("2")) {
-                System.out.println("Mevcut kanal : " + kanallar.get(kanal-1));
-                System.out.print("Kanal değiştirmek için ( + / - ) : ");
-                String kanalDegistirme = input.next();
-                if (kanalDegistirme.equals("+")){
-                    kanal ++;
-                    System.out.println("Yeni Kanal : " + kanallar.get(kanal-1));
-                }else if (kanalDegistirme.equals("-")){
-                    kanal --;
-                    System.out.println("Yeni Kanal : " + kanallar.get(kanal-1));
-                }
+
+                KanalDegistirme.kanalDegistirme();
+
             } else if (secenek.equals("3")) {
-                int kanalNo = 1;
-                for (String w : kanallar ) {
-                    System.out.println(kanalNo + ". Kanal : " + w);
-                    kanalNo ++;
-                }
-                System.out.print("Gitmek istediğiniz kanalın numarasını giriniz : ");
-                int kanalNumarasi = input.nextInt();
-                kanal = kanalNumarasi;
-                System.out.println("Seçtiğiniz kanal : " + kanallar.get(kanal-1));
+
+                GidilecekKanal.gidilecekKanal();
+
             } else if (secenek.equals("4")) {
                 System.out.println("************ Kanal Listesi ***********");
                 int kanalNo = 1;

@@ -1,34 +1,13 @@
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
-
-/*
-TV kumandası projesi
-TV --> açma, kapatma
-Ses --> arttırma, azaltma, kapatma, açma
-kanal --> değiştirme (+ , -)
-kanal --> ekleme, listeleme
-kanala gitme --> kanal numarası girilecek
-kanal uydu bilgisi -->  Kanal adı: .........
-                        Uydu: ..................
-                        Frekans: .............
-                        Polarizasyon: .............
-                        Symbol Rate: ...............
-                        Fec: ....../......
-
-ArrayList<String>[][] list = new ArrayList[][];
-ArrayList<ArrayList<String>> array_list = new ArrayList<ArrayList<String>>();
-
-[[kanal,uydu,frekans,polarizasyon,rate,fec],[kanal,uydu,frekans,polarizasyon,rate,fec],[kanal,uydu,frekans,polarizasyon,rate,fec]]
- */
 public class TvRemoteControl {
     public static void main(String[] args) {
         int kanal = 1;
         Scanner input = new Scanner(System.in);
 
         ArrayList<String> kanallar = new ArrayList<>(Arrays.asList("TRT","ATV","AHABER","TV8","FOX","SHOW"));
-        String kanalBilgileri[][] = {{"TRT1","Türksat 4A","11958","V","27500","5/6"},
-                {"ATV","Türksat 4A","12053","H","27500","5/6"}};
 
         KumandaMenusu.kumandaMenusu(); // Kumanda Menüsü
 
@@ -70,6 +49,12 @@ public class TvRemoteControl {
                 System.out.println("kanal ekleme");
             } */
             else if (secenek.equals("6")) {
+                try {
+                    Kanallar.kanalBilgileri();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                /*
                 System.out.println("**** Kanal Biligileri ****");
                 for (int i = 0 ; i < kanalBilgileri.length ; i++){
                     System.out.print("\nKanal Adı : " + kanalBilgileri[i][0]);
@@ -80,6 +65,7 @@ public class TvRemoteControl {
                     System.out.print("\nFec : " + kanalBilgileri[i][5]);
                     System.out.println("\n**********************");
                 }
+                */
             } else if (secenek.equals("q")) {
                 System.out.println("Çıkış yapıldı");
                 break;

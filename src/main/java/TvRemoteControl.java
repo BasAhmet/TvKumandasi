@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class TvRemoteControl {
     public static void main(String[] args) {
-        int kanal = 1;
         Scanner input = new Scanner(System.in);
 
         ArrayList<String> kanallar = new ArrayList<>(Arrays.asList("TRT","ATV","AHABER","TV8","FOX","SHOW"));
